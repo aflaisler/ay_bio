@@ -16,12 +16,12 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <!-- Global CSS -->
-  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
   <!-- Plugins CSS -->
-  <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../static/plugins/font-awesome/css/font-awesome.css">
 
   <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="../css/styles-12.css">
+  <link id="theme-style" rel="stylesheet" href="../static/css/styles-12.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -39,11 +39,11 @@
       </div>
       <!--//actions-->
       <ul class="social list-inline">
-        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/aflaisler/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
         <!-- <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
-        <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/aflaisler"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+        <!-- <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li> -->
       </ul>
       <!--//social-->
     </div>
@@ -51,7 +51,7 @@
 
     <div class="intro">
       <div class="container text-center">
-        <img class="profile-image" src="../images/profile-image.png" alt="">
+        <img class="profile-image" src="../static/images/profile-image.png" alt="">
         <h1 class="name">Aymeric Flaisler</h1>
         <div class="title">Data Engineer / Scientist</div>
         <div class="profile">
@@ -409,140 +409,75 @@
       <h2 class="section-title">Portfolio</h2>
       <ul id="filters" class="filters clearfix">
         <li class="type active" data-filter="*">All</li>
-        <li class="type" data-filter=".backend">Back-end</li>
-        <li class="type" data-filter=".frontend">Front-end</li>
+        <li class="type" data-filter=".startup">startup</li>
+        <li class="type" data-filter=".data">data</li>
       </ul>
       <!--//filters-->
       <div class="items-wrapper isotope row">
-        <div class="item frontend col-md-3 col-xs-6 ">
+        <div class="item startup col-md-3 col-xs-6 ">
           <div class="item-inner">
             <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-1.jpg" alt="" />
+              <img class="img-responsive" src="../static/images/portfolio/portfolio-1.jpg" alt="" />
             </figure>
             <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">AngularJS</div>
-              <div class="action"><a href="#">View on Github</a></div>
+              <h3 class="sub-title"><a href="https://www.youtube.com/watch?v=CVScZHJs268">CrowdClassics</a></h3>
+              <div class="meta">Invest in a classic car at the click of a button</div>
+              <div class="action"><a href="https://www.youtube.com/watch?v=CVScZHJs268">Watch the video</a></div>
             </div>
             <!--//content-->
-            <a class="link-mask" href="#"></a>
+            <a class="link-mask" href="https://www.youtube.com/watch?v=CVScZHJs268"></a>
           </div>
           <!--//item-inner-->
         </div>
         <!--//item-->
-        <div class="item backend col-md-3 col-xs-6 ">
+        <div class="item data col-md-3 col-xs-6 ">
           <div class="item-inner">
             <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-2.jpg" alt="" />
+              <img class="img-responsive" src="../static/images/portfolio/portfolio-2.jpg" alt="" />
             </figure>
             <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">Django</div>
+              <h3 class="sub-title"><a href="#">Formula One Compound Analysis</a></h3>
+              <div class="meta">Python / AWS</div>
               <div class="action"><a href="#">View on Github</a></div>
             </div>
             <!--//content-->
-            <a class="link-mask" href="#"></a>
+            <a class="link-mask" href="https://github.com/aflaisler/f1_2017"></a>
           </div>
           <!--//item-inner-->
         </div>
         <!--//item-->
-        <div class="item backend frontend col-md-3 col-xs-6 ">
+        <div class="item data col-md-3 col-xs-6 ">
           <div class="item-inner">
             <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-3.jpg" alt="" />
+              <img class="img-responsive" src="../static/images/portfolio/portfolio-3.jpg" alt="" />
             </figure>
             <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">Django/JavaScript</div>
+              <h3 class="sub-title"><a href="#">Fraud Detection (IART)</a></h3>
+              <div class="meta">Python / Flask / AWS</div>
               <div class="action"><a href="#">View on Github</a></div>
             </div>
             <!--//content-->
-            <a class="link-mask" href="#"></a>
+            <a class="link-mask" href="https://github.com/megano/case-study-fraud-detection"></a>
           </div>
           <!--//item-inner-->
         </div>
         <!--//item-->
-        <div class="item frontend col-md-3 col-xs-6 ">
+        <div class="item data col-md-3 col-xs-6 ">
           <div class="item-inner">
             <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-4.jpg" alt="" />
+              <img class="img-responsive" src="../static/images/portfolio/portfolio-4.jpg" alt="" />
             </figure>
             <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">ReactJS</div>
+              <h3 class="sub-title"><a href="#">Intraday Trading Bot with Automatic Position Covering</a></h3>
+              <div class="meta">Python/Java</div>
               <div class="action"><a href="#">View on Github</a></div>
             </div>
             <!--//content-->
-            <a class="link-mask" href="#"></a>
+            <a class="link-mask" href="https://github.com/aflaisler/data_pipeline_templates"></a>
           </div>
           <!--//item-inner-->
         </div>
         <!--//item-->
-        <div class="item backend col-md-3 col-xs-6 ">
-          <div class="item-inner">
-            <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-5.jpg" alt="" />
-            </figure>
-            <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">Python</div>
-              <div class="action"><a href="#">View on Github</a></div>
-            </div>
-            <!--//content-->
-            <a class="link-mask" href="#"></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-        <div class="item backend col-md-3 col-xs-6 ">
-          <div class="item-inner">
-            <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-6.jpg" alt="" />
-            </figure>
-            <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">JavaScript</div>
-              <div class="action"><a href="#">View on Github</a></div>
-            </div>
-            <!--//content-->
-            <a class="link-mask" href="#"></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-
-        <div class="item frontend col-md-3 col-xs-6 ">
-          <div class="item-inner">
-            <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-7.jpg" alt="" />
-            </figure>
-            <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">HTML/AngularJS</div>
-              <div class="action"><a href="#">View on Github</a></div>
-            </div>
-            <!--//content-->
-            <a class="link-mask" href="#"></a>
-          </div>
-          <!--//item-inner-->
-        </div>
-        <!--//item-->
-
-        <div class="item frontend backend col-md-3 col-xs-6 ">
-          <div class="item-inner">
-            <figure class="figure">
-              <img class="img-responsive" src="../images/portfolio/portfolio-8.jpg" alt="" />
-            </figure>
-            <div class="content text-left">
-              <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
-              <div class="meta">Python/AngularJS</div>
-              <div class="action"><a href="#">View on Github</a></div>
-            </div>
-            <!--//content-->
-            <a class="link-mask" href="#"></a>
-          </div>
-          <!--//item-inner-->
-        </div>
         <!--//item-->
 
       </div>
@@ -554,7 +489,7 @@
     <section id="contact-section" class="contact-section section">
       <h2 class="section-title">Get in Touch</h2>
       <div class="intro">
-        <img class="profile-image" src="../images/profile-image.png" alt="">
+        <img class="profile-image" src="../static/images/profile-image.png" alt="">
         <div class="dialog">
           <p>I'm currently taking on freelance work.I am a hard-working multicultural person, happy to live and very friendly. I am data-centric fluent in Python, in love with AI algorithms and believe rigorous foundations with data processing are compulsory
             to stay ahead of the competition.</p>
@@ -593,16 +528,16 @@
   <!--//configure-panel-->
 
   <!-- Javascript -->
-  <script type="text/javascript" src="../plugins/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript" src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../plugins/back-to-top.js"></script>
-  <script type="text/javascript" src="../plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-  <script type="text/javascript" src="../plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-  <script type="text/javascript" src="../plugins/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" src="../plugins/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/back-to-top.js"></script>
+  <script type="text/javascript" src="../static/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="../static/plugins/isotope.pkgd.min.js"></script>
 
   <!-- custom js -->
-  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../static/js/main.js"></script>
 
 
 
