@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 
 
@@ -10,13 +11,8 @@ def index():
 
 
 if __name__ == '__main__':
-    import os
-
-    port = 8000
-
-    # Open a web browser pointing at the app.
-    os.system('open http://localhost:{0}'.format(port))
-
-    # Set up the development server on port 8000.
-    app.debug = True
-    app.run(port=port)
+    cert = '/etc/letsencrypt/live/aymeric.bio/cert.pem'
+    key = '/etc/letsencrypt/live/aymeric.bio/privkey.pem'
+    context = (cert, key)
+    app.run(host='0.0.0.0',port=443, ssl_context=context, threaded=True, debug=True)
+   # app.run(host='0.0.0.0', debug=True)
