@@ -1,6 +1,7 @@
 # Manually added
 *.json
 *.pem
+*.key
 cert/
 
 # Byte-compiled / optimized / DLL files
