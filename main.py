@@ -13,10 +13,12 @@ def index():
 
 @app.route('/swim')
 def swim():
-    x = np.random.randint(100, 1000)
-    y = np.random.randint(10, 100)
-    z = sum([int(i) for i in str(x * y)])
-    nbs = [x, y, z]
+    nbs = []
+    for i in range(5):
+        x = np.random.randint(100, 1000)
+        y = np.random.randint(10, 100)
+        z = sum([int(i) for i in str(x * y)])
+        nbs.append([x, y, z])
     return render_template('swim.html', nbs=nbs)
 
 
