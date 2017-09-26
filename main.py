@@ -25,9 +25,9 @@ def swim():
 
 
 if __name__ == '__main__':
-    # cert = '/etc/letsencrypt/live/aymeric.bio/cert.pem'
-    # key = '/etc/letsencrypt/live/aymeric.bio/privkey.pem'
-    # context = (cert, key)
-    # app.run(host='0.0.0.0', port=443, ssl_context=context,
-    #         threaded=True, debug=True)
-    app.run(host='0.0.0.0', debug=True)
+    cert = '/etc/letsencrypt/live/aymeric.bio/cert.pem'
+    key = '/etc/letsencrypt/live/aymeric.bio/privkey.pem'
+    context = (cert, key)
+    app.run(host='0.0.0.0', port=443, ssl_context=context,
+            threaded=True, debug=True)
+    # app.run(host='0.0.0.0', debug=True)
