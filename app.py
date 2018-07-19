@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import numpy as np
 import pandas as pd
+import datetime
 
 app = Flask(__name__)
 
@@ -8,7 +9,9 @@ app = Flask(__name__)
 # For render_template pass in name of template and any variables needed
 @app.route('/')
 def index():
-    return render_template('index.html')
+    now = datetime.datetime.now()
+    yr_ = now.year
+    return render_template('index.html', year_=yr_)
 
 
 def rand_nb():
