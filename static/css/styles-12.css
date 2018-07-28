@@ -73,7 +73,11 @@ a.btn {
 .btn:hover,
 a.btn:hover {
   color: #fff;
-  background: #5c34a4;
+  /* background: #5c34a4; */
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 #topcontrol {
   -webkit-transition: all 0.4s ease-in-out;
@@ -110,7 +114,11 @@ a.btn:hover {
   font-weight: normal;
 }
 .header {
-  background: #673AB7;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: #673AB7; */
   color: #fff;
 }
 .header a {
@@ -181,7 +189,11 @@ a.btn:hover {
   margin-bottom: 30px;
 }
 .header .intro {
-  background: #5c34a4;
+  /* background: #5c34a4; */
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding-top: 90px;
   padding-bottom: 60px;
   position: relative;
@@ -192,7 +204,10 @@ a.btn:hover {
   margin: 0 auto;
 }
 .header .contact-info {
-  background: #512e90;
+  /* background: #512e90; */
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 16px;
@@ -238,7 +253,11 @@ a.btn:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #673AB7;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: #673AB7; */
 }
 .page-nav-wrapper a {
   color: rgba(255, 255, 255, 0.6);
