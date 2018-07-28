@@ -2,7 +2,7 @@
 //** Available/ usage terms at http://www.dynamicdrive.com (March 30th, 09')
 //** v1.1 (April 7th, 09'):
 //** 1) Adds ability to scroll to an absolute position (from top of page) or specific element on the page instead.
-//** 2) Fixes scroll animation not working in Opera. 
+//** 2) Fixes scroll animation not working in Opera.
 
 
 var scrolltotop={
@@ -47,7 +47,7 @@ var scrolltotop={
 			this.state.isvisible=false
 		}
 	},
-	
+
 	init:function(){
 		jQuery(document).ready(function($){
 			var mainobj=scrolltotop
@@ -55,7 +55,7 @@ var scrolltotop={
 			mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //not IE or IE7+ browsers in standards mode
 			mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
 			mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
-				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
+				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety+20, right:mainobj.controlattrs.offsetx+28, opacity:0, cursor:'pointer'})
 				.attr({title:'Scroll Back to Top'})
 				.click(function(){mainobj.scrollup(); return false})
 				.appendTo('body')
